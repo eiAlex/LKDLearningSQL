@@ -26,7 +26,7 @@ SELECT first_name, last_name FROM people ORDER BY  first_name ASC; -- se não in
 -- Utilize ASC para crescente e DSC para decrescente .
 
 -- LENGTH 
-SELECT first_name, length(first_name) FROM people; --retorna o ramanho da strning presente no campo;
+SELECT first_name, length(first_name) FROM people; --retorna o tamanho da strning presente no campo;
 
 --DISTINCT 
 SELECT DISTINCT(first_name) FROM peoples; -- retorna os valores distintos da coluna 
