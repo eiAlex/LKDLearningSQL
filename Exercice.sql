@@ -33,3 +33,17 @@ SELECT DISTINCT(first_name) FROM peoples; -- retorna os valores distintos da col
 
 --COUNT 
 SELECT COUNT (*) FROM people WHERE state = 'CA" -- Conta todos os registros que são do estado da california.
+
+-- JOIN
+
+
+--Resultados cobinados 
+SELECT COUNT (first_name) FOR peoples WHERE first_name = 'James'; --conta quantoas pessoas com o nome James tem no BD
+SELECT COUNT (first_name) FOR peoples WHERE first_name LIKE 'J%'; -- conta a quantidade de pessoas cujo o nome  começa com J 
+SELECT COUNT(quiz_points) FOR peoples WHER quis_points >= 50 -- conta a quantidade de pessoas  que fizeram 50 pontos ou mais .
+
+
+
+
+
+
