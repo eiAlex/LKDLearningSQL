@@ -34,8 +34,11 @@ SELECT DISTINCT(first_name) FROM peoples; -- retorna os valores distintos da col
 --COUNT 
 SELECT COUNT (*) FROM people WHERE state = 'CA" -- Conta todos os registros que são do estado da california.
 
--- JOIN
-
+--JOIN ou INNER JOIN 
+--O inner join ou apenas join é uma consulta que combina uma ou mais tabelas. sua condição de junção comprara duas colunas ou de difrerentes 
+--tabelas.
+SELECT p.first_name, s.state_name FROM people p, states s WHERE p.state = s.state_abbrev;
+SELECT  p.first_name, state_name FROM people p INNER JOIN  states s ON (p.state = s.state_abbrev);
 
 --Resultados cobinados 
 SELECT COUNT (first_name) FOR peoples WHERE first_name = 'James'; --conta quantoas pessoas com o nome James tem no BD
