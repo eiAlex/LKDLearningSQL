@@ -49,6 +49,11 @@ SELECT COUNT(quiz_points) FOR peoples WHER quis_points >= 50 -- conta a quantida
 SELECT team, COUNT(*) AS qtd, SUM (quiz_points) AS soma, (SUM (quiz_pointz)/COUNT(*)) AS media FROM people GROUP BY team;
 --retona a soma e a media agrupada por teams.
 
+-- MAX 
+SELECT MAX (quiz_points) FROM people; -- o retorna o valor maximo da coluna
+-- SUB SEECT
+SELECT first_name, last_name, quiz_points FROM people WHERE quiz_points = (SELECT MAX(quiz_points) FROM people);
+
 
 
 
