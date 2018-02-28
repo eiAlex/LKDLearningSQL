@@ -45,6 +45,9 @@ SELECT COUNT (first_name) FOR peoples WHERE first_name = 'James'; --conta quanto
 SELECT COUNT (first_name) FOR peoples WHERE first_name LIKE 'J%'; -- conta a quantidade de pessoas cujo o nome  começa com J 
 SELECT COUNT(quiz_points) FOR peoples WHER quis_points >= 50 -- conta a quantidade de pessoas  que fizeram 50 pontos ou mais .
 
+-- Math
+SELECT team, COUNT(*) AS qtd, SUM (quiz_points) AS soma, (SUM (quiz_pointz)/COUNT(*)) AS media FROM people GROUP BY team;
+--retona a soma e a media agrupada por teams.
 
 
 
