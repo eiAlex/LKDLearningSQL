@@ -1,3 +1,6 @@
+DROP TABLE states;
+DROP TABLE people;
+
 CREATE TABLE states (
  state_name VARCHAR2 (30),
  state_abbrev VARCHAR2 (30),
