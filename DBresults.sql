@@ -1,4 +1,5 @@
 DROP TABLE states;
+
 DROP TABLE people;
 
 CREATE TABLE states (
