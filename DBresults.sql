@@ -1,3 +1,4 @@
+
 DROP TABLE states;
 
 DROP TABLE people;
