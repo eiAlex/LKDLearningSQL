@@ -1,1 +1,2 @@
-# LKDLearningSQL
+# LearningSQL
+Objetos básicos SQL
