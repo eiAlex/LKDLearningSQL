@@ -1,0 +1,11 @@
+--No-Equijoins
+--Relacionamento
+--entre duas ou mais tabelas, onde os valores de uma coluna da primeira
+--tabela não correspondem diretamente aos valores da coluna da
+--segunda tabela. Como se fosse um cross
+--join, que impõem condições para filtrar os registros
+--desejados
+-- Os relacionamrntos entre tabelas QUE NÂO SÂO constituidos por um operador de igualdade são chamados de NO-EQUI-JOINS
+
+--EX:
+SELECT e.last_nama, e.salary, j.grade_level FROM employees e JOIN job_grades j ON e.salary BETWEEN j.lowest_sal AND j.highest_sal;
