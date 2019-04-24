@@ -53,6 +53,7 @@ SELECT team, COUNT(*) AS qtd, SUM (quiz_points) AS soma, (SUM (quiz_pointz)/COUN
 
 -- MAX 
 SELECT MAX (quiz_points) FROM people; -- o retorna o valor maximo da coluna
+
 -- SUB SEECT
 SELECT first_name, last_name, quiz_points FROM people WHERE quiz_points = (SELECT MAX(quiz_points) FROM people);
 -- Esta sub seleção retonar uma lista de nomes e sobre nomes de quantos tem a maior pontuação.
