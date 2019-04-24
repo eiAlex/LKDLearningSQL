@@ -21,6 +21,7 @@ SELECT first_name, last_name FROM peoples WHERE last_name LIKE 'Bla%' -- Retorna
 -- O % pode ser utilizado tanto no inicio quando no final da consulta
 
 --ORDET BY 
+
 SELECT first_name, last_name FROM people ORDER BY  first_name; -- Ordena todos do nome em ordem pelo primeiro nome
 SELECT first_name, last_name FROM people ORDER BY  first_name ASC; -- se não informar por padrão o oracle utiliza ela.
 -- Utilize ASC para crescente e DSC para decrescente .
